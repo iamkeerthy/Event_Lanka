@@ -1,0 +1,231 @@
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F0ED;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2E3A59;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #394867;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1d273d;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 40px;
+    width: calc(100% - 240px);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2E3A59;
+}
+
+.card p {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.profile,.my-services,.notifications,.payments,.reports,.availability {
+    margin-bottom: 40px;
+}
+
+.profile h2,.my-services h2,.notifications h2,.payments h2,.reports h2,.availability h2 {
+    margin-bottom: 20px;
+    color: #2E3A59;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, select, button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"], .modify, .delete {
+    width: 150px;
+    align-self: flex-start;
+    background-color: #2E3A59;
+    color: white;
+}
+
+button[type="submit"]:hover, .modify:hover, .delete:hover {
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #394867;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+.notifications ul, .my-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notifications li, .my-services li{
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+
+/*.provider-avatar {
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+}*/
+
+canvas {
+    margin-bottom: 40px;
+}
+
+.package {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+button[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    opacity: 0.8;
+}
+
+.user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        /* General button styling */
+button {
+    background-color: #007BFF; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Style for delete button specifically */
+button.delete {
+    background-color: #dc3545; /* Bootstrap Danger Color */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Darker shade for hover */
+}

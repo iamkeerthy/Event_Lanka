@@ -1,0 +1,165 @@
+/* Reset some default browser styles */
+body, h1, h3, p, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #00274d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.navbar .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    margin: 0; /* Remove margin for consistency */
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    margin-left: 2rem;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Add gap between columns */
+}
+
+.col {
+    flex: 1 1 calc(50% - 20px); /* Adjust width and allow wrapping */
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00274d;
+    padding-bottom: 5px;
+}
+
+.inputBox {
+    margin-bottom: 15px;
+}
+
+.inputBox span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00274d;
+}
+
+.inputBox input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.inputBox input:focus {
+    border-color: #00274d;
+}
+
+/* Flex container for smaller elements */
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex input {
+    width: 90%;
+}
+
+/* Submit button styling */
+.submit-btn {
+    display: block;
+    width: 60%;
+    margin-left: 11rem;
+    padding: 10px;
+    background-color: #b35900;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e67300;
+}
+
+/* Responsive image styling */
+.inputBox img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        flex: 1 1 100%; /* Full width columns */
+        margin-bottom: 20px;
+    }
+
+    .col:last-child {
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: 18px; /* Adjust font size if necessary */
+    }
+
+    .submit-btn {
+        font-size: 14px; /* Adjust button font size if necessary */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px; /* Further adjust font size on very small screens */
+    }
+
+    .title {
+        font-size: 16px; /* Further adjust title font size */
+}
+}
