@@ -1,10 +1,17 @@
-# EventLanka 🎉
+# EventLanka 🏠
 
 EventLanka is a user-friendly web-based event management system designed to streamline the process of planning and organizing various events in Badulla, Sri Lanka. The platform enhances the overall event experience for both organizers and attendees by offering efficient event planning, seamless vendor management, and a customizable booking process.
 
 ## Project Aim 🎯
 
 To develop a comprehensive web-based event management system that simplifies the planning and organization of various events, ultimately improving the experience for both organizers and attendees.
+
+
+## Screenshot
+
+Here is a screenshot of the app:
+
+![EventLanka Screenshot](https://github.com/iamkeerthy/Event_Lanka/blob/main/event.jpeg)
 
 ## Objectives 🎯
 
